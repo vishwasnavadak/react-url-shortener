@@ -1,0 +1,30 @@
+{
+  "name": "react-url-shortener",
+  "version": "1.0.0",
+  "description": "Serverless url-shortener using React.js and Firebase.",
+  "main": "webpack.conf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neetjn/react-url-shortener.git"
+  },
+  "keywords": [
+    "react",
+    "javascript",
+    "js",
+    "firebase",
+    "url-shortener",
+    "bulma"
+  ],
+  "author": "John Nolette <john@neetgroup.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neetjn/react-url-shortener/issues"
+  },
+  "homepage": "https://github.com/neetjn/react-url-shortener#readme"
+}
