@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/neetjn/react-url-shortener#readme",
   "devDependencies": {
+    "animejs": "^2.2.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.1.2",
     "babel-loader": "^7.1.2",
@@ -40,6 +41,7 @@
     "eslint-plugin-react": "^7.5.1",
     "extract-text-webpack-plugin": "2.1.0",
     "file-loader": "0.11.2",
+    "foundation-icons": "^1.0.1",
     "google-fonts-webpack-plugin": "^0.4.3",
     "karma": "^2.0.0",
     "karma-electron": "^5.2.2",
