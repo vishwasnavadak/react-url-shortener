@@ -50,9 +50,8 @@ module.exports = {
   plugins: [
     new GoogleFontsPlugin({
 			fonts: [
-				{ family: 'Julius Sans One' },
-        { family: 'Zilla Slab Highlight' },
-        { family: 'Barlow Condensed' }
+				{ family: 'Yanone Kaffeesatz' },
+        { family: 'Anton' }
 			]
 		}),
     new ExtractTextPlugin('app.css')

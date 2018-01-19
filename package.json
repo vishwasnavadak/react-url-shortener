@@ -7,7 +7,13 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "test"
+    "build": "node_modules/.bin/webpack --config webpack.config.js",
+    "dev": "./node_modules/.bin/webpack-dev-server --config webpack.config.js --hot --port 3000 --host 0.0.0.0",
+    "app": "./node_modules/.bin/webpack-dev-server --config webpack.config.js --cache --host 0.0.0.0 --port 3000 --public react-url-shortener.firebase.com",
+    "start": "npm run app",
+    "lint": "node_modules/.bin/eslint src/**.js",
+    "test:unit": "node_modules/.bin/karma test/karma.conf.js",
+    "test": "npm run test"
   },
   "repository": {
     "type": "git",
@@ -48,6 +54,7 @@
     "node-sass": "4.0.0",
     "raw-loader": "0.5.1",
     "react": "^16.2.0",
+    "react-router": "^4.2.0",
     "reactbulma": "1.1.1",
     "sass-loader": "6.0.5",
     "style-loader": "0.18.0",
