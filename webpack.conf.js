@@ -55,7 +55,7 @@ module.exports = {
         { family: 'Barlow Condensed' }
 			]
 		}),
-    new ExtractTextPlugin('dist.css')
+    new ExtractTextPlugin('app.css')
   ],
   externals : {
     document: 'document'
