@@ -1,18 +1,19 @@
 const path = require('path')
 
-function resolve(dir) {
-  return path.join(__dirname, '.', dir)
-}
-
 const GoogleFontsPlugin = require('google-fonts-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: './src/App.jsx',
   output: {
-    path: resolve('./dist'),
+    path: path.join(__dirname, '/dist'),
     publicPath: 'dist/',
-    filename: 'app.js',
+    filename: 'app.js'
+  },
+  resolve: {
+    alias: {
+      '@': path.join(__dirname, '/src')
+    }
   },
   module: {
     rules: [
