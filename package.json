@@ -54,6 +54,7 @@
     "node-sass": "4.0.0",
     "raw-loader": "0.5.1",
     "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
     "reactbulma": "1.1.1",
     "sass-loader": "6.0.5",

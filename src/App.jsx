@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import { Header } from './components/Header'
-import { Footer } from './components/Footer'
+import ReactDOM from 'react-dom'
+import Footer from './components/Footer.jsx'
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return(
       <app>
-        <Header />
         <div className="container is-fullhd">
           <section>
             <h1>boilerplate</h1>
@@ -17,3 +16,5 @@ export default class App extends Component {
     )
   }
 }
+
+ReactDOM.render(<App />, document.querySelector('#root'))
