@@ -3,17 +3,21 @@ import React, { Component } from 'react'
 export default class Shortener extends Component {
   render() {
     return (
-      <div className="field">
-        <p className="control has-icons-left has-icons-right">
-          <input className="input" type="email" placeholder="Email" />
-          <span className="icon is-small is-left">
-            <i className="fas fi-link"></i>
-          </span>
-          <span className="icon is-small is-right">
-            <i className="fas fi-check"></i>
-          </span>
-        </p>
-      </div>
+      <shortener>
+        <div className="field has-addons">
+          <p className="control has-icons-left has-icons-right is-expanded">
+            <span className="icon is-small is-left">
+              <i className="fas fi-link"></i>
+            </span>
+            <input className="input has-text-centered" type="text" placeholder="Paste a link to shorten" />
+          </p>
+          <p className="control">
+            <button type="submit" className="button is-info">
+              Shorten <i className="ico ico-right fi fi-wrench"></i>
+            </button>
+          </p>
+        </div>
+      </shortener>
     )
   }
 }
