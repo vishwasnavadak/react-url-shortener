@@ -24,8 +24,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             babelrc: false,
-            presets: ['react', 'env'],
-            plugins: ['add-module-exports']
+            presets: ['react', 'env']
           }
         }
       },
