@@ -24,7 +24,9 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             babelrc: false,
-            presets: ['react', 'env']
+            cacheDirectory: true,
+            presets: ['react', 'env'],
+            plugins: ['react-hot-loader/babel']
           }
         }
       },
@@ -50,7 +52,7 @@ module.exports = {
   plugins: [
     new GoogleFontsPlugin({
 			fonts: [
-				{ family: 'Yanone Kaffeesatz' },
+				{ family: 'Archivo Narrow' },
         { family: 'Anton' }
 			]
 		}),
