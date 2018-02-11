@@ -1,22 +1,26 @@
 import React, { Component } from 'react'
-import { Nav, NavLeft, NavRight, NavItem } from 'reactbulma'
 
 export default class Footer extends Component {
   render() {
     return(
       <footer>
-        <Nav>
-          <Nav.Left>
-            <Nav.Item>
-              <h1>Fork Me</h1>
-            </Nav.Item>
-          </Nav.Left>
-          <Nav.Right>
-            <Nav.Item>
-              <h1>Fork Me</h1>
-            </Nav.Item>
-          </Nav.Right>
-        </Nav>
+        <nav className="navbar has-shadow" role="navigation" aria-label="main navigation">
+          <div className="navbar-menu">
+            <div className="navbar-start">
+              <a className="navbar-item">
+                test?
+              </a>
+              <a className="navbar-item" href="https://github.com/neetjn/react-url-shortener">
+                Fork on Github
+                <span className="icon is-large">
+                  <i className="ico ico-2x fi-social-github"></i>
+                </span>
+              </a>
+            </div>
+            <div className="navbar-end">
+            </div>
+          </div>
+        </nav>
       </footer>
     )
   }
