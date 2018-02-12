@@ -1,5 +1,6 @@
 const path = require('path')
 
+const Dotenv = require('dotenv-webpack')
 const GoogleFontsPlugin = require('google-fonts-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
@@ -50,6 +51,10 @@ module.exports = {
     ]
   },
   plugins: [
+    new Dotenv({
+      path: './.env',
+      safe: true
+    }),
     new GoogleFontsPlugin({
 			fonts: [
 				{ family: 'Archivo Narrow' },
