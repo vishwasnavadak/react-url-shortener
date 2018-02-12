@@ -44,7 +44,7 @@ export default class Home extends Component {
                  src={ logo } />
             <Shortener />
             <h2 style={ styles.counter } className="subtitle">
-              <span id="counter">0</span> Links Shortened
+              <span ref={ (e) => this.counter = e }>0</span> Links Shortened
             </h2>
           </div>
         </div>
