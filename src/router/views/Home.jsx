@@ -1,5 +1,5 @@
-import anime from 'animejs'
 import React, { Component } from 'react'
+import Anime from 'react-anime'
 import Shortener from '@/components/Shortener.jsx'
 
 const logo = require('@/assets/images/reactbase.svg')
@@ -25,13 +25,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     const self = this
-    anime({
-      targets: self.logo,
-      easing: 'linear',
-      scale: 5,
-      rotate: '1turn',
-      transition: 5000
-    })
+    // # add anime for counter
   }
 
   render() {
@@ -39,9 +33,13 @@ export default class Home extends Component {
       <section style={ styles.container } className="hero is-dark is-fullheight">
         <div className="hero-body has-text-centered">
           <div className="container">
-            <img ref={ (e) => this.logo = e }
-                 style={ styles.reactLogo }
-                 src={ logo } />
+            <Anime easing="linear"
+                   scale={5}
+                   duration={1000}
+                   rotate={360}>
+              <img style={ styles.reactLogo }
+                   src={ logo } />
+            </Anime>
             <Shortener />
             <h2 style={ styles.counter } className="subtitle">
               <span ref={ (e) => this.counter = e }>0</span> Links Shortened
