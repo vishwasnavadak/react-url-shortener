@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/neetjn/react-url-shortener#readme",
   "devDependencies": {
+    "animate.css": "^3.6.1",
     "animejs": "^2.2.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.1.2",

@@ -12,7 +12,7 @@ export default class Router extends Component {
   render() {
     return(
       <BrowserRouter>
-        <div className="wrapper">
+        <div className="wrapper animated fadeIn">
           <Route path="/" component={ Home } />
           <Route path="/shortened" component={ Shortened } />
           <Route path="/about" component={ About } />
