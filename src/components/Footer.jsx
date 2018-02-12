@@ -7,12 +7,7 @@ export default class Footer extends Component {
         <nav className="navbar has-shadow is-black" role="navigation" aria-label="main navigation">
           <div className="navbar-menu">
             <div className="navbar-start">
-              <a className="navbar-item" href="https://github.com/neetjn/react-url-shortener">
-                <span className="icon is-large">
-                  <i className="ico ico-2x fi-social-github"></i>
-                </span>
-                Fork on Github
-              </a>
+
             </div>
             <div className="navbar-end">
               <a className="navbar-item" href="hhttps://www.linkedin.com/in/john-nolette-69ba72132/">
@@ -21,11 +16,11 @@ export default class Footer extends Component {
                 </span>
                 LinkedIn
               </a>
-              <a className="navbar-item" href="hhttps://github.com/neetjn">
+              <a className="navbar-item" href="https://github.com/neetjn/react-url-shortener">
                 <span className="icon is-large">
                   <i className="ico ico-2x fi-social-github"></i>
                 </span>
-                Github
+                Fork on Github
               </a>
             </div>
           </div>
