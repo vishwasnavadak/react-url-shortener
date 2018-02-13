@@ -1,4 +1,4 @@
-import firebase from 'firebase'
+import Firebase from 'firebase'
 
 const config = {
   apiKey: process.env.RUS_FIREBASE_API_KEY,
@@ -8,4 +8,13 @@ const config = {
   messagingSenderId: process.env.RUS_FIREBASE_MESSAGING_SENDER_ID
 }
 
-export default fire = firebase.initializeApp(config)
+if (!Firebase.apps.length) {
+  Firebase.initializeApp(config)
+}
+
+const Auth = Firebase.auth()
+
+export {
+  Auth,
+  Firebase
+}

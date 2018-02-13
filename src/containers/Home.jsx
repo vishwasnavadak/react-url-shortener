@@ -35,10 +35,11 @@ export default class Home extends Component {
           <div className="container">
             <Anime easing="linear"
                    scale={5}
-                   duration={1000}
+                   duration={1250}
                    rotate={360}>
               <img style={ styles.reactLogo }
-                   src={ logo } />
+                   src={ logo }
+                   title="React + Firebase" />
             </Anime>
             <Shortener />
             <h2 style={ styles.counter } className="subtitle">

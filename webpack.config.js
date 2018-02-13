@@ -53,7 +53,6 @@ module.exports = {
   plugins: [
     new Dotenv({
       path: './.env',
-      safe: true
     }),
     new GoogleFontsPlugin({
 			fonts: [
