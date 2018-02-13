@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Auth } from '@/Fire'
 
 export default class Footer extends Component {
   render() {

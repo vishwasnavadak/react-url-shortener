@@ -14,7 +14,7 @@ function requireAuth(nextState, replace) {
       pathname: '/login'
     })
   }
-}
+} // TODO: replace with redux auth store
 
 export default class Router extends Component {
   render() {
